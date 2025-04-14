@@ -1,15 +1,15 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
       <nav className="navbar navbar-expand navbar-light bg-light">
        <div className="container">
-        <a className="navbar-brand "href="/">
+        <Link className="navbar-brand "to="/">
           <img
             src="media\images\images\logo.svg"
             style={{ width: "20%" }}
           ></img>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -31,25 +31,30 @@ export default function Navbar() {
           id="navbarNav"
         >
           <ul className="navbar-nav">
+          <li className="nav-item active">
+              <Link className="nav-link" to="/signup">
+              Signup <span className="sr-only">(current)</span>
+              </Link>
+            </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/">
-                Home <span className="sr-only">(current)</span>
-              </a>
+              <Link className="nav-link" to="/about">
+                About <span className="sr-only">(current)</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Features
-              </a>
+              <Link className="nav-link" to="/product">
+              Product
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/pricing">
                 Pricing
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="/">
-                Disabled
-              </a>
+              <Link className="nav-link" to="/support">
+                Support
+              </Link>
             </li>
           </ul>
         </div>

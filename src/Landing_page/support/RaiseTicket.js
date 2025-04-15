@@ -232,4 +232,4 @@ function RaiseTicket() {
   );
 }
 
-export default CreateTicket;
+export default RaiseTicket;

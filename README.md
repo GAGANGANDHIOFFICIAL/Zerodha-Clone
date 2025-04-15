@@ -9,3 +9,7 @@ we have used react-routes-dom
 imported import { BrowserRouter,Route, Routes } from 'react-router-dom';
 and then in the browser router we have enabled paths for every section of out web page 
 <!-- example ====     <Route path='/'element={<HomePage></HomePage>}/> -->
+on day 3 i have developed most of the frontend of the zerodha clone all the routes are working using react-routes 
+diving in dashboard and the backend part 
+<!--  font end completed  -->
+# day 3 
